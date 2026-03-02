@@ -1,9 +1,11 @@
 import React from 'react'
 import {BrowserRouter,Routes,Route,Link} from "react-router-dom";
 
+import Home from './Pages/Home';
+import About from './Pages/About';
 export default function App() {
   return (
-    <div>
+    <BrowserRouter>
       <nav>
         <ul>
           <li>
@@ -20,6 +22,6 @@ export default function App() {
         <Route path="/about" element={<About />} />
       </Routes>
 
-    </div>
+    </BrowserRouter>
   )
 }
